@@ -33,10 +33,6 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="<?= base_url('/pengantar') ?>">Pengantar</a></li>
                   <li><a class="dropdown-item" href="<?= base_url('/struktur') ?>">Struktur Organisasi</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="<?= base_url('/sop') ?>">SOP</a></li>
                 </ul>
               </li>
               <li class="nav-item">

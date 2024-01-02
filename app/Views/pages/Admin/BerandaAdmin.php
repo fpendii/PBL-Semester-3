@@ -68,7 +68,7 @@
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Daftar Pengguna</h5>
+                            <h5 class="mb-1">Daftar Anggota</h5>
                         </div>
                     </a>
                     <?php foreach ($pengguna as $rowPengguna) : ?>
@@ -77,8 +77,6 @@
                                 <h5 class="mb-1"><?php echo $rowPengguna['username'] ?></h5>
                                 <small class="text-body-secondary"><?php echo $rowPengguna['level'] ?></small>
                             </div>
-                            <p class="mb-1">Some placeholder content in a paragraph.</p>
-                            <small class="text-body-secondary">And some muted small print.</small>
                         </a>
                     <?php endforeach; ?>
                 </div>

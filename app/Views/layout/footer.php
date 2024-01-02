@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-xxl">
   <div class="footer text-start bg-dark text-light">
     <div class="container text-start">
       <div class="row">

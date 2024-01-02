@@ -8,25 +8,31 @@
 </head>
 
 <body>
-    <div class="login-container text-center">
-        <h2>Selamat Datang</h2>
-        <form action="/login/verifikasi-login" method="post">
-            <div class="input-container">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" value="<?php echo old('username') ?>" required>
-            </div>
-            <div class="input-container">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <?php if (session()->getFlashdata('error')) : ?>
-                <div class="alert alert-danger" role="alert">
-                    <?php echo session()->getFlashdata('error') ?>
+        <div class="card text-center" style="width: 25rem;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <img width="100px" src="/img/user.png" alt="">
+                </h5>
+                <div>
+                    <h6 class="card-subtitle mb-2" style="color: #0F1035;">Sebelum melanjutkan, harap lakukan proses login terlebih dahulu.</h6>
                 </div>
-            <?php endif; ?>
-            <button type="submit" name="login">Login</button>
-        </form>
-    </div>
+                <form action="<?= base_url('/login/verifikasi-login') ?>" method="post" class="text-start">
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Username</label>
+                        <input type="Username" class="form-control" id="email" value="<?php echo old('username') ?>" name="username" required>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" value="<?php echo old('password') ?>" name="password" required>
+                    </div>
+                    <?php if (session()->getFlashdata('error')) : ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo session()->getFlashdata('error') ?>
+                        </div>
+                    <?php endif; ?>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -10,9 +10,9 @@
 <body>
         <div class="card text-center" style="width: 25rem;">
             <div class="card-body">
-                <h5 class="card-title">
+                <div class="card-title mb-3">
                     <img width="100px" src="/img/user.png" alt="">
-                </h5>
+                </div>
                 <div>
                     <h6 class="card-subtitle mb-2" style="color: #0F1035;">Sebelum melanjutkan, harap lakukan proses login terlebih dahulu.</h6>
                 </div>

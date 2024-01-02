@@ -38,6 +38,7 @@ class ManajementArtikel extends BaseController
     {
         $artikel = $this->DataArtikel->getArtikel($id);
         $alamat = $this->DataAlamat->findAll();
+        
 
         $data = [
             'judul' => 'Artikel PPKS Politala',

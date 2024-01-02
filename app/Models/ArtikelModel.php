@@ -78,4 +78,10 @@ class ArtikelModel extends Model
 
         return $query->getRow();
     }
+
+    public function getArtikelWithUser(){
+        return $this->join('user', 'user.id_user = artikel.id_user')
+                    ->select('artikel.id_artikel, artikel.isi_artikel')
+                    ->findAll();
+    }
 }

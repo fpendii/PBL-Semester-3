@@ -39,7 +39,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <a href="<?= base_url('logout') ?>" class="btn btn-outline-primary">Logout</a>
+                    <a href="<?= base_url('logout') ?>" class="btn">Logout</a>
                 </form>
             </div>
         </div>
